@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist e Autocomplete</title>
+</head>
+<body>
+    <h1> Formulário de DataList e Autocomplete</h1>
+    <p> Esse formulário demonstra o atributo Autocomplete e o elemento Datalist</p>
+    <form action="www.fatecfranca.edu.br" method="get" autocomplete="on">
+        <p>
+            <label> Primeiro nome:
+                <input type="text" placeholder="Digite Primeiro nome">
+            </label> (Primeiro Nome)
+        </p>
+    <p>
+        <label>Último nome: <br>
+            <input type="text" placeholder="Digite Último nome">
+        </label> (Último Nome)
+    </p>
+    <p>
+        <label>Digite seu e-mail: <br>
+            <input type="email" placeholder="nome@dominio.com.br" required>
+            (nome@dominio.com.br)
+        </label>
+    </p>
+    <p>
+        <label for="txtList"> Mês de Aniversário
+            <input type="text" name="" id="txtList"
+            placeholder="Selecione um mês" list="meses">
+            <datalist id="meses">
+                <option value="Janeiro"></option>
+                <option value="Fevereiro"></option>
+                <option value="Março"></option>
+                <option value="Abril"></option>
+                <option value="Maio"></option>
+                <option value="Junho"></option>
+                <option value="Julho"></option>
+                <option value="Agosto"></option>
+                <option value="Setembro"></option>
+                <option value="Outubro"></option>
+                <option value="Novembro"></option>
+                <option value="Dezembro"></option>
+            </datalist>
+        </label>
+    </p>
+        <input type="submit"></input>
+        <input type="reset"></input>
+    </p>
+</form>
+</body>
+</html>

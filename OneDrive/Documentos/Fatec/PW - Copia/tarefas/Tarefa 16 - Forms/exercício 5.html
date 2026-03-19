@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alguns inputs types</title>
+    <style>
+        body{
+            background-color: bisque;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: burlywood;
+            text-shadow: -4px 4px 6px dimgray  ;
+        }
+        input {
+            color: beige;
+            background-color: black;
+        }
+        button {
+            background-color: aquamarine;
+        }
+        fieldset {
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <h1> Formulário de inputs types</h1>
+    <p> Nesse formulário vamos mostrar alguns elementos que podem ser utilizados</p>
+    <form action="www.fatecfranca.edu.br" method="get">
+        <fieldset>
+            <legend>Tempo</legend>
+                <label>Informe a data:<input type="date"></label> <br /> <br>
+                 <label>Imprima um horário:<input type="datetime"
+                     placeholder="--:--">(hh:mm:ss)</label> <br>
+                 <label>Escolha um mês:<input type="month">(mm-aaaa)</label> <br /> <br>
+                 <label>Escolha um horário: <input type="datetime-local"> <br /> <br>
+        </label>
+        </fieldset>
+            <br><label> Digite seu nome:
+                <input type="text" placeholder="Nome">
+            </label>
+        </p>    
+    <p>
+            <label>Escolha uma cor: <br>
+            <input type="color" autofocus>
+        </label>
+    </p>
+    <p>
+        <label>Entrar com seu e-mail: <br>
+            <input type="email" placeholder="name@domain.com.br" required>
+            (name@domain.com.br)
+        </label>
+    </p>
+    <p>
+        <label>Número: 
+            <input type="number"> <br>
+            min="0"
+            max="7"
+            step="1"
+            value="4"
+           
+        </label> (Entre com números entre 0 e 7)
+    </p>
+    <p>
+        <label>Comprimento: <br>
+            0 <input type="range"
+                min="0"
+                max="50"
+                value="25">
+            50
+        </label> (m)
+    </p>
+    <p>
+        <label>Pesquisa: <br>
+            <input type="search" >
+            (Entre com sua pesquisa)
+        </label>
+    </p>
+    <p>
+        <label>Telefone: <br>
+            <input type="tel" placeholder="(##) #### - ####" 
+            pattern="/(d{2}\) +\d{4} - \d{4}" required>
+        </label>
+    </p>
+    <p>
+        <label> Horário:
+            <input type="time">
+            (hh:mm)
+        </label>
+    </p>
+    <p>
+        <label> URL Do site:
+            <input type="url" placeholder="http://www.nomedominio.com.br">
+            (http://www.nomedominio.com.br)
+        </label>
+    </p>
+    <p><label>Semanas:
+        <input type="week">
+        (Semana nro, aaaa)
+    </label></p>  
+    <p>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </p>
+</form>
+</body>
+</html>

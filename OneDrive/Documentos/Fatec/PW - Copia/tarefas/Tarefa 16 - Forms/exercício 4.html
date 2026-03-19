@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist e Autocomplete</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: darksalmon;
+            
+        }
+        input {
+            background-color: rgb(251, 17, 99);   
+        }
+
+        img {
+            float: right;
+            margin-top: 0em;
+        }
+
+        fieldset {
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <img src="santos.jpeg" alt="Escudo do Santos">
+    <h1> Formulário de DataList e Autocomplete</h1>
+    <p> Esse formulário demonstra o atributo Autocomplete e o elemento Datalist</p>
+    <form action="www.fatecfranca.edu.br" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label> Primeiro nome:<input type="text" 
+                placeholder="Digite Primeiro nome"></label> (Primeiro Nome) <br /> <br>
+            <label>Último nome: <input type="text"
+                 placeholder="Digite Último nome"> </label> (Último Nome)
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Time do Coração</legend>
+               <label>Digite seu time do coração: <input type="email" required></label><br> 
+                <label for="txtList"> Maior Time do Brasil:
+            <input type="text" name="" id="txtList"
+            placeholder="Selecione um time" list="times" required>
+            <datalist id="times">
+                <option value="Palmeiras"></option>
+                <option value="Flamengo"></option>
+                <option value="Santos"></option>
+                <option value="Corinthians"></option>
+                <option value="São Paulo"></option>
+                <option value="Grêmio"></option>
+                <option value="Internacional"></option>
+                <option value="Vasco"></option>
+                <option value="Fluminense"></option>
+                <option value="Botafogo"></option>
+                <option value="Cruzeiro"></option>
+                <option value="Atlético-MG"></option>
+            </datalist>
+        </label>
+        </fieldset>
+        <br>
+        <input type="submit"></input>
+        <input type="reset"></input>
+</p>
+</form>
+</body>
+</html>
