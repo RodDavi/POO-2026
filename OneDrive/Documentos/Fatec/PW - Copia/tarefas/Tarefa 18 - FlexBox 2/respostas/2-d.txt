@@ -1,1 +1,0 @@
-As figuras encolhem até que, a partir de determinado ponto, elas desaparecem da direita pra esquerda. 

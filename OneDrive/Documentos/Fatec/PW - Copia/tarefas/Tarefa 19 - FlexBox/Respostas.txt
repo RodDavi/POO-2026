@@ -1,9 +1,0 @@
-
-1) O cabeçalho agora fica sempre visível, diferente de antes. O comportamento na rolagem está diferente.
-3) A sombra desce e depois fica menos nítida.
-4) text-decoration: none;
-5-a) header {align-items: center;}
-5-b) main>h2 {margin-bottom: 2rem;}
-6-a) footer a:hover {text-decoration: underline;}
-6-b) header>nav a:hover {text-decoration: underline;}
-6-b) call-to-action> a:hover {background-color: brown;}
